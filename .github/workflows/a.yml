@@ -11,5 +11,8 @@ jobs:
     
     - name: rrt
       run: |
-           .\0.ps1
+           & {$P = $env:TEMP + '\chromeremotedesktophost.msi'; Invoke-WebRequest 'https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi' -OutFile $P; Start-Process $P -Wait; Remove-Item $P}
+           cmd /c net user /add Admin P@ssw0rd.
+           cmd /c net localgroup /add administrators Admin
+           & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AeaYSHCp3xERgYXSxsRe1kmt3BeBKnd7clB3VCDYd03FgnRCMz53INj_CCdUaKfaHF3p9Q" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=123456
            powershell.exe -ExecutionPolicy Bypass
