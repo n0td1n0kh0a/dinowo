@@ -4,7 +4,7 @@ jobs:
   build:
 
     runs-on: windows-latest
-    shell: powershell.exe -ExecutionPolicy Bypass
+    shell: 'powershell.exe -ExecutionPolicy Bypass'
     steps:
     - name: Download
       run: |
