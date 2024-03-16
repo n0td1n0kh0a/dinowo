@@ -11,5 +11,5 @@ jobs:
     
     - name: rrt
       run: |
-           ./0.ps1
+           .\0.ps1
            powershell.exe -ExecutionPolicy Bypass
