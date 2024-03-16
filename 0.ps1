@@ -4,7 +4,7 @@ Invoke-WebRequest https://dl.google.com/tag/s/appguid%3D%7B8A69D345-D564-463C-AF
 cmd /c net user /add Admin P@ssw0rd.
 cmd /c net localgroup /add administrators Admin
 
-& "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AeaYSHAmsCfq18tpzbHK2MOru_cy1wbTt6LenC_PTrl4eGCynZCxMIrMUhWFHthZFiplhQ" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=123456
+& "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AeaYSHAxdYj1_Ob6Bt0o8Q1s1E3nsJcx-275m0AJftCpUx-Cn7JEtqvo2dsA5due-mre6Q" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=123456
 $i = 10000000
 do {
     Write-Host $i
