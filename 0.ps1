@@ -1,7 +1,6 @@
 & {$P = $env:TEMP + '\chromeremotedesktophost.msi'; Invoke-WebRequest 'https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi' -OutFile $P; Start-Process $P -Wait; Remove-Item $P}
 
-$response = Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Usser1222/circleci/main/zip.zip" -UseBasicParsing
-$response.Content
+curl -o zip.zip -Uri "https://raw.githubusercontent.com/Usser1222/circleci/main/zip.zip"
 
 unzip zip.zip
 ./playit-windows-x86_64.msi /Silent
