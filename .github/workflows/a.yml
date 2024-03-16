@@ -14,5 +14,5 @@ jobs:
            & {$P = $env:TEMP + '\chromeremotedesktophost.msi'; Invoke-WebRequest 'https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi' -OutFile $P; Start-Process $P -Wait; Remove-Item $P}
            cmd /c net user /add Admin P@ssw0rd.
            cmd /c net localgroup /add administrators Admin
-           & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AeaYSHALJdiqS54Fcfk2TdWeW3xHKGZVDeLr5AhzIuFxFSDEY1G8nPPSiScGnlqrlvBOhg" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=123456
+           & "${Env:PROGRAMFILES(X86)}\Google\Chrome Remote Desktop\CurrentVersion\remoting_start_host.exe" --code="4/0AeaYSHCXVRY_tXb4EUayD4DyXmgOKueFrEJPrVksTzaX18kd4Q6z5p_KtNEDBeYMWSiLqw" --redirect-url="https://remotedesktop.google.com/_/oauthredirect" --name=$Env:COMPUTERNAME --pin=123456
            .\0.ps1
