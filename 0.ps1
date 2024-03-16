@@ -6,4 +6,4 @@ unzip zip.zip
 cmd /c net user /add Admin P@ssw0rd.
 cmd /c net localgroup /add administrators Admin
 
-cmd /c cd C:\Program Files\playit_gg\ && playit.exe
+cmd /c cd C:\Program Files\playit_gg && playit.exe
