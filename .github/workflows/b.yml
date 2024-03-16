@@ -3,9 +3,6 @@ name: UEFI VM (Not Recommended)
 on: 
   workflow_dispatch:
     inputs:
-      ngrok:
-        description: 'Enter Ngrok Authtoken'
-        required: true
       link_iso:
         description: 'Enter Custom Iso Direct Link'
         required: true
