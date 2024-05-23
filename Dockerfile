@@ -29,12 +29,14 @@ COPY --chmod=755 ./assets /run/assets
 ADD --chmod=755 https://raw.githubusercontent.com/christgau/wsdd/v0.8/src/wsdd.py /usr/sbin/wsdd
 ADD --chmod=664 https://github.com/qemus/virtiso/releases/download/v0.1.248/virtio-win-0.1.248.iso /run/drivers.iso
 
-EXPOSE 8006 5900
+EXPOSE 8006 5900 3389
 VOLUME /storage
 
 ENV RAM_SIZE "6G"
 ENV CPU_CORES "3"
 ENV DISK_SIZE "128G"
-ENV VERSION "win10-iot"
+ENV VERSION "tiny11"
+ENV USERNAME: "FreeRDP"
+ENV PASSWORD: "FreeRDP_C0mmun1ny"
 
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
