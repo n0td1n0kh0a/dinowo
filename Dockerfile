@@ -36,7 +36,5 @@ ENV RAM_SIZE "6G"
 ENV CPU_CORES "3"
 ENV DISK_SIZE "128G"
 ENV VERSION "tiny11"
-ENV USERNAME: "FreeRDP"
-ENV PASSWORD: "FreeRDP_C0mmun1ny"
 
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
