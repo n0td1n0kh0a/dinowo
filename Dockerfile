@@ -35,6 +35,6 @@ VOLUME /storage
 ENV RAM_SIZE "6G"
 ENV CPU_CORES "3"
 ENV DISK_SIZE "128G"
-ENV VERSION "2016"
+ENV VERSION "2019"
 
 ENTRYPOINT ["/usr/bin/tini", "-s", "/run/entry.sh"]
