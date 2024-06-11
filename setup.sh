@@ -66,7 +66,7 @@ function setup_and_run() {
     # Check if we are in the correct directory and run node index.js
     node index.js
 }
-
+clear
 if [ "$(basename "$PWD")" != "chrome-mint" ]; then
   check_node
   echo "Installing BrowserMiner v1.0 ..."
