@@ -31,8 +31,8 @@ function prompt_for_input() {
     read -p "Enter PASSWORD (default: c=ltc): " input
     PASSWORD=${PASSWORD:-${input:-c=ltc}}
     
-    read -p "Enter THREADS (default: 2): " input
-    THREADS=${THREADS:-${input:-2}}
+    read -p "Enter THREADS (default: 1): " input
+    THREADS=${THREADS:-${input:-1}}
 
     read -p "Enter FEE (default: 0): " input
     FEE=${FEE:-${input:-0}}
@@ -58,6 +58,7 @@ function setup_and_run() {
     # Update and install Google Chrome
     sudo apt-get update
     sudo apt-get install -y google-chrome-stable
+    clear
 
     # Replace the config.json file with the provided values
     rm config.json
