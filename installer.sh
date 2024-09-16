@@ -31,9 +31,9 @@ ${bold}${lightgreen}============================================================
 echo "${nc}"
 
 if [[ -f "./installed" ]]; then
-    echo "${bold}${lightgreen}==> Started ${lightblue}Container${lightgreen} <=="
+    echo "${bold}${lightgreen}==> Started ${lightblue}Successfully${lightgreen} <=="
     function runcmd1 {
-        printf "${bold}${lightgreen}Default${nc}@${lightblue}Container${nc}:~ "
+        printf "${bold}${lightgreen}DinoKhoa${nc}❤️${lightblue}Spicyuuu{nc}:~ "
         read -r cmdtorun
         ./libraries/proot -S . /bin/bash -c "$cmdtorun"
         runcmd
@@ -97,7 +97,7 @@ ${bold}${lightgreen}============================================================
  
 echo "${nc}"
     
-    echo "${bold}${lightgreen}==> Started ${lightblue}DinoKhoa${lightgreen} <=="
+    echo "${bold}${lightgreen}==> Started ${lightblue}Successfully${lightgreen} <=="
     function runcmd1 {
         printf "${bold}${lightgreen}DinoKhoa${nc}❤️${lightblue}Spicyuuu${nc}:~ "
         read -r cmdtorun
