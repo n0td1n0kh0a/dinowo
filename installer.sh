@@ -33,13 +33,13 @@ echo "${nc}"
 if [[ -f "./installed" ]]; then
     echo "${bold}${lightgreen}==> Started ${lightblue}Successfully${lightgreen} <=="
     function runcmd1 {
-        printf "${bold}${lightgreen}DinoKhoa${nc}❤️${lightblue} Spicyuuu{nc}:~ "
+        printf "${bold}${lightgreen}DinoKhoa${nc}❤️${lightblue} Spicyuuu:~ "
         read -r cmdtorun
         ./libraries/proot -S . /bin/bash -c "$cmdtorun"
         runcmd
     }
     function runcmd {
-        printf "${bold}${lightgreen}DinoKhoa${nc}❤️${lightblue} Spicyuuu{nc}:~ "
+        printf "${bold}${lightgreen}DinoKhoa${nc}❤️${lightblue} Spicyuuu:~ "
         read -r cmdtorun
         ./libraries/proot -S . /bin/bash -c "$cmdtorun"
         runcmd1
@@ -99,13 +99,13 @@ echo "${nc}"
     
     echo "${bold}${lightgreen}==> Started ${lightblue}Successfully${lightgreen} <=="
     function runcmd1 {
-        printf "${bold}${lightgreen}DinoKhoa${nc}❤️${lightblue} Spicyuuu${nc}:~ "
+        printf "${bold}${lightgreen}DinoKhoa${nc}❤️${lightblue} Spicyuuu:~ "
         read -r cmdtorun
         ./libraries/proot -S . /bin/bash -c "$cmdtorun"
         runcmd
     }
     function runcmd {
-        printf "${bold}${lightgreen}DinoKhoa${nc}❤️${lightblue} Spicyuuu${nc}:~ "
+        printf "${bold}${lightgreen}DinoKhoa${nc}❤️${lightblue} Spicyuuu$:~ "
         read -r cmdtorun
         ./libraries/proot -S . /bin/bash -c "$cmdtorun"
         runcmd1
