@@ -18,15 +18,6 @@ nc=$(echo -en "\e[0m")
 lightblue=$(echo -en "\e[94m")
 lightgreen=$(echo -en "\e[92m")
 
-echo "
-${bold}${lightgreen}========================================================================
-                                                                                                  
-${bold}${lightblue}Goofy ahh
-      
-                                                                                                  
-                                                                                                                
-${bold}${lightgreen}========================================================================
- "
  
 echo "${nc}"
 
@@ -85,16 +76,6 @@ else
     echo -ne '\n'
     touch installed
     
-    echo "
-${bold}${lightgreen}========================================================================
-                                                                                                  
-${bold}${lightblue}Goofy ahh
-      
-                                                                                                  
-                                                                                                                
-${bold}${lightgreen}========================================================================
- "
- 
 echo "${nc}"
     
     echo "${bold}${lightgreen}==> Started ${lightblue}Successfully${lightgreen} <=="
